@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,10 +55,11 @@
       z-index: 500;
     }
 
-    .live{
+    .live {
       border: rgb(0, 213, 255) solid 2px;
       cursor: pointer;
     }
+
     /* Responsive Styles */
     @media (max-width: 768px) {
       body {
@@ -69,7 +71,7 @@
         width: 100%;
         height: auto;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         padding: 10px;
       }
@@ -102,46 +104,41 @@
       .char {
         flex-wrap: wrap;
         padding: 5px;
-flex-direction: column;
       }
     }
   </style>
 </head>
+
 <body>
   <div class="char">
     <p style="font-size: 26px; width: 100%;">
       CHOOSE YOUR CHARACTER
     </p>
 
+    <a href="/">
+      <img class="im" src="sherr-removebg-preview.png" alt="">
 
-<div>
- 
-  <a href="/">
-    <img class="im" src="sherr-removebg-preview.png" alt="">
-  
-  <a href="/elvish.html">
-  
-      <img class="im " src="evliss.png" alt="">
-    </a> 
-  
+      <a href="/elvish.html">
+
+        <img class="im " src="evliss.png" alt="">
+      </a>
+
       <a href="/ff.html">
-  
-  
-      <img class="im" src="danger.png" alt="">
-    </a> 
-  
+
+
+        <img class="im" src="danger.png" alt="">
+      </a>
+
       <a href="/juice.html">
-  
-      <img class="im" src="don.png" alt="">
-    </a> 
-  
+
+        <img class="im " src="don.png" alt="">
+      </a>
+
       <a href="/level.html">
-  
-      <img class="im live" src="motivator.png" alt="">
-    </a> 
-  
-</div>
- 
+
+        <img class="im live" src="motivator.png" alt="">
+      </a>
+
   </div>
   <div class="container" onclick="show(event); play(event);">
 
@@ -164,4 +161,5 @@ flex-direction: column;
     }
   </script>
 </body>
+
 </html>
