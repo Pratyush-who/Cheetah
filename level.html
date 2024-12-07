@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheetah-hi-kehde</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      position: absolute;
+      width: 100px; 
+      height: 100px;
+      pointer-events: none; 
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" onclick="show(event); play(event);">
+  </div>
+
+  <script>
+    function show(event) {
+      const img = document.createElement('img');
+      img.src = './motivator.png'; 
+      const x = event.clientX;
+      const y = event.clientY;
+      img.style.left = `${x - 52}px`; 
+      img.style.top = `${y - 55}px`;  
+      document.querySelector('.container').appendChild(img);
+    }
+    
+    function play(event) {
+      const audio = new Audio('./level.mp3');
+      audio.play();
+    }
+  </script>
+</body>
+</html>
