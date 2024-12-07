@@ -1,165 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cheetah-hi-kehde</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      background-color: black;
-      font-weight: 800;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    img {
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      pointer-events: none;
-    }
-
-    .im {
-      position: relative;
-      align-items: start;
-      cursor: crosshair;
-      border-radius: 10%;
-      border: white solid 2px;
-    }
-
-    .container {
-      width: 85%;
-      height: 100vh;
-      background-color: #000;
-      cursor: pointer;
-    }
-
-    .char {
-      width: 15%;
-      gap: 7px;
-      text-align: center;
-      height: 100%;
-      background-color: #272727;
-      color: white;
-      display: flex;
-      /* justify-content: center; */
-      flex-direction: column;
-      align-items: center;
-      z-index: 500;
-    }
-
-    .live {
-      border: rgb(0, 213, 255) solid 2px;
-      cursor: pointer;
-    }
-
-    /* Responsive Styles */
-    @media (max-width: 768px) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheetah-hi-kehde</title>
+    <style>
       body {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .char {
-        width: 100%;
-        height: auto;
-        flex-wrap: wrap;
-        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
         justify-content: center;
-        padding: 10px;
-      }
-
-      .char p {
-        font-size: 18px;
+        align-items: center;
+        overflow: hidden;
+        background-color: black;
+        font-weight: 800;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
       }
 
       img {
-        width: 60px;
-        height: 60px;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        pointer-events: none;
+      }
+
+      .im {
+        position: relative;
+        align-items: start;
+        cursor: crosshair;
+        border-radius: 10%;
+        border: white solid 2px;
       }
 
       .container {
-        width: 100%;
-        height: calc(100vh - 100px);
-      }
-    }
-
-    @media (max-width: 480px) {
-      .char p {
-        font-size: 16px;
-      }
-
-      img {
-        width: 50px;
-        height: 50px;
+        width: 85%;
+        height: 100vh;
+        background-color: #000;
+        cursor: pointer;
       }
 
       .char {
-        flex-wrap: wrap;
-        padding: 5px;
+        width: 15%;
+        gap: 7px;
+        text-align: center;
+        height: 100%;
+        background-color: #272727;
+        color: white;
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        align-items: center;
+        z-index: 500;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <div class="char">
-    <p style="font-size: 26px; width: 100%;">
-      CHOOSE YOUR CHARACTER
-    </p>
+      .live {
+        border: rgb(0, 213, 255) solid 2px;
+        cursor: pointer;
+      }
 
-    <a href="/">
-      <img class="im" src="sherr-removebg-preview.png" alt="">
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        body {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .char {
+          width: 100%;
+          height: auto;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: center;
+          padding: 10px;
+        }
+
+        .char p {
+          font-size: 18px;
+        }
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
+
+        .container {
+          width: 100%;
+          height: calc(100vh - 100px);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .char p {
+          font-size: 16px;
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+
+        .char {
+          flex-wrap: wrap;
+          padding: 5px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="char">
+      <p style="font-size: 26px; width: 100%">CHOOSE YOUR CHARACTER</p>
+
+      <a href="/">
+        <img class="im" src="sherr-removebg-preview.png" alt="" />
+      </a>
 
       <a href="/elvish.html">
-
-        <img class="im " src="evliss.png" alt="">
+        <img class="im" src="evliss.png" alt="" />
       </a>
 
       <a href="/ff.html">
-
-
-        <img class="im" src="danger.png" alt="">
+        <img class="im" src="danger.png" alt="" />
       </a>
 
       <a href="/juice.html">
-
-        <img class="im live" src="don.png" alt="">
+        <img class="im live" src="don.png" alt="" />
       </a>
 
       <a href="/level.html">
-
-        <img class="im" src="motivator.png" alt="">
+        <img class="im" src="motivator.png" alt="" />
       </a>
+    </div>
+    <div class="container" onclick="show(event); play(event);"></div>
 
-  </div>
-  <div class="container" onclick="show(event); play(event);">
+    <script>
+      function show(event) {
+        const img = document.createElement("img");
+        img.src = "./don.png";
+        const x = event.clientX;
+        const y = event.clientY;
+        img.style.left = `${x - 52}px`;
+        img.style.top = `${y - 55}px`;
+        document.querySelector(".container").appendChild(img);
+      }
 
-  </div>
-
-  <script>
-    function show(event) {
-      const img = document.createElement('img');
-      img.src = './don.png';
-      const x = event.clientX;
-      const y = event.clientY;
-      img.style.left = `${x - 52}px`;
-      img.style.top = `${y - 55}px`;
-      document.querySelector('.container').appendChild(img);
-    }
-
-    function play(event) {
-      const audio = new Audio('./juice.mp3');
-      audio.play();
-    }
-  </script>
-</body>
-
+      function play(event) {
+        const audio = new Audio("./juice.mp3");
+        audio.play();
+      }
+    </script>
+  </body>
 </html>
