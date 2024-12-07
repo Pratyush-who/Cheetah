@@ -45,7 +45,7 @@
       gap: 7px;
       text-align: center;
       height: 100%;
-      background-color: #141414;
+      background-color: #272727;
       color: white;
       display: flex;
       /* justify-content: center; */
@@ -111,11 +111,31 @@
     <p style="font-size: 26px;">
       CHOOSE YOUR CHARACTER
     </p>
-    <img class="im live" src="sherr-removebg-preview.png" alt="">
-    <img class="im" src="sherr-removebg-preview.png" alt="">
-    <img class="im live" src="sherr-removebg-preview.png" alt="">
-    <img class="im" src="sherr-removebg-preview.png" alt="">
-    <img class="im" src="sherr-removebg-preview.png" alt="">
+  
+<a href="/">
+  <img class="im" src="sherr-removebg-preview.png" alt="">
+
+<a href="/elvish.html">
+
+    <img class="im " src="evliss.png" alt="">
+  </a> 
+
+    <a href="/ff.html">
+
+
+    <img class="im live" src="danger.png" alt="">
+  </a> 
+
+    <a href="/juice.html">
+
+    <img class="im" src="don.png" alt="">
+  </a> 
+
+    <a href="/level.html">
+
+    <img class="im" src="motivator.png" alt="">
+  </a> 
+
   </div>
   <div class="container" onclick="show(event); play(event);">
 
@@ -124,7 +144,7 @@
   <script>
     function show(event) {
       const img = document.createElement('img');
-      img.src = './sherr-removebg-preview.png';
+      img.src = './danger.png';
       const x = event.clientX;
       const y = event.clientY;
       img.style.left = `${x - 52}px`;
@@ -133,7 +153,7 @@
     }
 
     function play(event) {
-      const audio = new Audio('./are-chita-hi-kehde.mp3');
+      const audio = new Audio('./ff.mp3');
       audio.play();
     }
   </script>
