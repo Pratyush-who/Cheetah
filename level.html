@@ -28,7 +28,7 @@
     .im {
       position: relative;
       align-items: start;
-      cursor: pointer;
+      cursor: crosshair;
       border-radius: 10%;
       border: white solid 2px;
     }
@@ -69,7 +69,7 @@
         width: 100%;
         height: auto;
         flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         padding: 10px;
       }
@@ -102,6 +102,7 @@
       .char {
         flex-wrap: wrap;
         padding: 5px;
+flex-direction: column;
       }
     }
   </style>
@@ -111,31 +112,36 @@
     <p style="font-size: 26px;">
       CHOOSE YOUR CHARACTER
     </p>
+
+
+<div>
+ 
+  <a href="/">
+    <img class="im" src="sherr-removebg-preview.png" alt="">
   
-<a href="/">
-  <img class="im" src="sherr-removebg-preview.png" alt="">
-
-<a href="/elvish.html">
-
-    <img class="im " src="evliss.png" alt="">
-  </a> 
-
-    <a href="/ff.html">
-
-
-    <img class="im" src="danger.png" alt="">
-  </a> 
-
-    <a href="/juice.html">
-
-    <img class="im" src="don.png" alt="">
-  </a> 
-
-    <a href="/level.html">
-
-    <img class="im live" src="motivator.png" alt="">
-  </a> 
-
+  <a href="/elvish.html">
+  
+      <img class="im " src="evliss.png" alt="">
+    </a> 
+  
+      <a href="/ff.html">
+  
+  
+      <img class="im" src="danger.png" alt="">
+    </a> 
+  
+      <a href="/juice.html">
+  
+      <img class="im" src="don.png" alt="">
+    </a> 
+  
+      <a href="/level.html">
+  
+      <img class="im live" src="motivator.png" alt="">
+    </a> 
+  
+</div>
+ 
   </div>
   <div class="container" onclick="show(event); play(event);">
 
